@@ -18,7 +18,7 @@ export default function Home() {
         Vi er Østlandsbasert i Oslo og Fredrikstad. Kurssted kan variere ut fra lokalene som benyttes. Vi tilbyr også samtaler og kurs digitalt.
       </p>
 
-      <h2>Neste PREP-kurs er 7.- 8. sept. 2024 i Oslo.</h2>
+      <h2>Neste PREP-kurs er 7.- 8. sept. 2024 i Oslo</h2>
 
       <p>
         Kurset handler om å forebygge og forsterke parforhold inspirert av PREP-modellen (Prevention and relationship enhancement program) fra Samlivssenteret ved Modum Bad. PREP er et samlivskurs som opprinnelig startet opp i USA på 80-tallet.
