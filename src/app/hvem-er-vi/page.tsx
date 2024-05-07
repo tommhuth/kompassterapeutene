@@ -3,6 +3,8 @@ export default function Page() {
         <>
             <h1>Hvem er vi?</h1>
 
+            <p>Kort intro til dere begge her</p>
+
             <h2 id="susanne">Susanne</h2>
             <p>
                 Susanne har erfaring som parterapeut og familieterapeut i det offentlige og private. Hun er også

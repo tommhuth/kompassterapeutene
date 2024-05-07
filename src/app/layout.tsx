@@ -28,8 +28,13 @@ export default function RootLayout({
                 </Link>
               </li>
               <li> 
-                <Link href="/paamelding-priser-kontakt">
-                  Påmelding, priser og kontakt
+                <Link href="/kurs">
+                  Kurs
+                </Link>
+              </li>
+              <li> 
+                <Link href="/paamelding-kontakt">
+                  Påmelding og kontakt
                 </Link>
               </li>
             </ul>
