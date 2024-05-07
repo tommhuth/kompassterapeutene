@@ -11,7 +11,7 @@ export default function Kurs() {
             </p>
 
             <h2>PREP helgekurs</h2>
-            <p><em>Neste kurs 7-8 sept.</em></p>
+            <p><em>Neste kurs 7&ndash;8 sept.</em></p>
             <p>
                 Vil dere ha et kræsjkurs i parforhold? Ta helgekurset vårt som holdes lørdag og søndag kl. 10-16
                 med andre deltagere. Ingen presentasjon eller rollespill! Meld dere på nå, invester i parforholdet
