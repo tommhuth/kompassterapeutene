@@ -1,0 +1,27 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: inherit;
+   font-weight: inherit;
+   line-height: inherit;
+   background-color: transparent;
+   border: none;
+   border-radius: none;
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+body {
+   border: 1em solid lightgray;
+   overscroll-behavior: none;
+
+   @media (max-width: 600px) {
+      border-width: .4em;
+   }
+}

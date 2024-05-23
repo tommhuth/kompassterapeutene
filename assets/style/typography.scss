@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+html {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--black);
+}
+
+.h1 {
+    font-size: 4em;
+    letter-spacing: -.04em;
+    line-height: 1.1;
+    margin-top: 2em;
+    margin-bottom: .25em;
+
+    @media (max-width: 1000px) { 
+        margin-top: 1.25em;
+    } 
+
+    @media (max-width: 600px) {
+        font-size: 3em;
+        margin-top: 1.25em;
+    } 
+
+    @media (max-width: 450px) {
+        font-size: 2.5em;
+    } 
+}
+
+.h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.1;
+
+    @media (max-width: 600px) {
+        font-size: 1.85em;
+    }  
+}
+
+.hgroup {
+    margin-top: 3.5em; 
+    margin-bottom: 1em;
+
+    @media (max-width: 640px) {
+        margin-top: 2.5em; 
+        margin-bottom: .65em;
+    } 
+}
+
+.h3 {
+    font-size: 2.125em;
+    font-weight: bold;
+    line-height: 1.1;
+    color: var(--wheat);
+
+    @media (max-width: 600px) {
+        font-size: 1.65em;
+    }  
+} 
+
+.p1,
+.p2 {
+    & + & {
+        margin-top: .65em;
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover { 
+            color: var(--wheat);
+        }
+    }
+}
+
+.p1 {
+    font-size: 1.625em;
+    line-height: 1.4;
+    font-weight: 300;
+    font-style: italic; 
+    
+    @media (max-width: 600px) {
+        font-size: 1.35em;
+    } 
+
+    @media (max-width: 450px) {
+        font-size: 1.25em;
+    } 
+}
+
+.p2 {
+    font-size: 1.15em;
+    line-height: 1.5; 
+
+    @media (max-width: 600px) {
+        font-size: 1em;
+    } 
+} 
+
+.l1 {
+    font-size: 0.9375em;
+    line-height: 1; 
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,55 +1,28 @@
-import type { Metadata } from "next"; 
-import "./globals.css"; 
-import Link from "next/link";
+import "../../assets/style/app.scss"
+
+import type { Metadata } from "next"
+import Header from "@/components/header/header"
+import Footer from "@/components/footer/footer"
 
 export const metadata: Metadata = {
-  title: "Kompassterapeutene",
-  description: "Kompassterapeutene",
-};
+    title: "Kompassterapeutene",
+    description: "Kompassterapeutene",
+}
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="no">
-      <body>
-        <header> 
-          <nav>
-            <Link href="/">
-              Kompassterapeutene
-            </Link>
-            
-            <ul>
-              <li> 
-                <Link href="/hvem-er-vi">
-                  Hvem er vi
-                </Link>
-              </li>
-              <li> 
-                <Link href="/kurs">
-                  Kurs
-                </Link>
-              </li>
-              <li> 
-                <Link href="/paamelding-kontakt">
-                  Påmelding og kontakt
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        
-        <main> 
-          {children}
-        </main>
+    children,
+}: { children: React.ReactNode; }) {
+    return (
+        <html lang="no">
+            <body>
+                <Header />
 
-        <footer>
-          Kompassterapautene &copy;  {new Date().getFullYear()}
-          <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
-        </footer>
-      </body>
-    </html>
-  );
+                <main>
+                    {children}
+                </main>
+
+                <Footer />
+            </body>
+        </html>
+    )
 }

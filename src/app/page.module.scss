@@ -1,0 +1,22 @@
+.figure {
+    position: relative;
+    margin-bottom: 2em;
+
+    &::before {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+        right: 0;
+        height: 35%;
+        background-image: linear-gradient(to bottom, white, transparent);
+    }
+
+    &__image {
+        object-fit: cover; 
+        width: 100%;
+        object-position: center bottom;
+        max-height: clamp(300px, 50vw, 500px); 
+    }
+}
