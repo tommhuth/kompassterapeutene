@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     font-family: "Cormorant Garamond", serif;
@@ -30,7 +31,7 @@ html {
 
 .h2 {
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.1;
 
     @media (max-width: 600px) {
@@ -39,18 +40,18 @@ html {
 }
 
 .hgroup {
-    margin-top: 3.5em; 
-    margin-bottom: 1em;
+    margin-top: 3.5rem; 
+    margin-bottom: 1rem;
 
     @media (max-width: 640px) {
-        margin-top: 2.5em; 
-        margin-bottom: .65em;
+        margin-top: 2.5rem; 
+        margin-bottom: .65rem;
     } 
 }
 
 .h3 {
     font-size: 2.125em;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.1;
     color: var(--wheat);
 
@@ -103,5 +104,67 @@ html {
     line-height: 1; 
     letter-spacing: .05em;
     text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.list {
+    columns: 2;
+    gap: 1.5em;
+    margin: .5em 0; 
+
+    li {
+        list-style-type: disc;
+        margin-left: 1.25em;
+        margin-bottom: .125em;
+    }
+}
+
+.tags {
+    display: flex;
+    gap: .35em;
+    flex-wrap: wrap;
+    color: var(--wheat);
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: .025em;
+
+    li {
+        border: 1px solid currentColor;
+        padding: .85em 1.75em;
+        border-radius: 5em;
+    }
+}
+
+.arrow-list {
+    margin-top: 1.5em !important;
+
+    li {
+        margin-bottom: .125em;
+    }
+
+    a {
+        display: inline-flex;
+        gap: .75em;
+        place-content: center;
+        text-decoration: none;
+
+        svg {
+            width: 1em;
+            transition: all .2s;
+            pointer-events: none;
+        }
+
+        &:hover {
+            svg {
+                translate: .125em 0;
+            }
+        }
+    }
+
 }

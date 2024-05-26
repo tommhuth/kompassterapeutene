@@ -17,11 +17,31 @@ img {
    max-width: 100%;
 }
 
+html {
+   height: 100%;
+} 
+
 body {
+   min-height: 100%;
    border: 1em solid lightgray;
    overscroll-behavior: none;
+   box-sizing: border-box;
 
    @media (max-width: 600px) {
       border-width: .4em;
    }
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+main {
+   flex: 1 1;
+}
+
+header, 
+footer {
+   flex: 0 0 ;
 }
