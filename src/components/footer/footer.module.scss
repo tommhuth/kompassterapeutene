@@ -1,10 +1,22 @@
 .footer {
-    margin-top: clamp(3em, 8vw, 8em);
     padding: 1.85em 5em max(2em, env(safe-area-inset-bottom));
     border-top: 1px solid lightgray;
     display: flex;
     place-items: center;
     justify-content: space-between; 
+    margin-top: clamp(4.5em, 8vw, 8em);
+
+    &--tight {
+        margin-top: 0;
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--wheat);
+        }
+    }
 
     @media (max-width: 1300px) {
         padding-left: 2em; 
@@ -14,5 +26,8 @@
     @media (max-width: (850px + 16px * 2)) {
         padding-left: 16px;
         padding-right: 16px;
+        flex-direction: column;
+        place-items: flex-start;
+        gap: .5em;
     } 
 } 

@@ -1,12 +1,15 @@
-import Link from "next/link"
+import classNames from "classnames"
 import styles from "./footer.module.scss"
 
-export default function Footer() {
+export default function Footer({ tight = false }: { tight?: boolean }) {
     return (
-        <footer className={styles.footer}> 
+        <footer
+            className={classNames(styles.footer, {
+                [styles["footer--tight"]]: tight
+            })}
+        >
             Kompassterapautene &copy;  {new Date().getFullYear()}
             <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
         </footer>
-
     )
 }

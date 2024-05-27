@@ -1,15 +1,45 @@
+.header {
+    position: relative; 
+    border-bottom: 1px solid lightgray; 
+}
+
 .logo {
     display: flex;
     place-items: center;
     place-content: center;
+    gap: .5em;
+
+    img {
+        width: 1.75em;
+        height: 1.75em;
+    }
+}
+
+.toggler {
+    display: none;
+    border: 1em solid transparent;
+    margin: -1em; 
+    place-content: center;
+    place-items: center;
+
+    svg {
+        width: 2em;
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+    }  
 }
 
 .nav {
-    padding: 1.85em 5em 1.5em;
-    border-bottom: 1px solid lightgray; 
+    padding: 1.85em 5em 1.5em; 
     display: flex;
     place-items: center;
     justify-content: space-between;  
+
+    a:hover {
+        color: var(--wheat);
+    }
 
     @media (max-width: 1300px) {
         padding-left: 2em; 
@@ -33,5 +63,30 @@
 
     @media (max-width: 600px) {
         display: none;
-    } 
+    }  
+
+    &--open {
+        background-color: #fff;
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 5.35rem;
+        border-left: .4rem solid lightgray;
+        border-right: .4rem solid lightgray;
+        border-bottom: .4rem solid lightgray;
+        bottom: 0;  
+        z-index: 1;
+        padding: 1em;
+        padding-bottom: 10vw;
+        font-size: 1.75em;
+        place-content: flex-end;
+        gap: 1em; 
+
+        li {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: .75em; 
+            padding-top: .75em; 
+        }
+    }
 }

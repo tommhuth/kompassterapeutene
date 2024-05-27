@@ -1,26 +1,56 @@
 import Container from "@/components/container/container"
 import Link from "next/link"
 import styles from "./page.module.scss"
+import Image, { getImageProps } from "next/image";
+
+import family1wide from "../../assets/images/family1_wide.png"
+import family1square from "../../assets/images/family1_square.png"
+import logo from "../../assets/images/logo.jpg"
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
+    const common = { alt: "Mor og far med barn i sommereng.", sizes: '100vw' }
+    const desktop = getImageProps({
+        ...common,
+        src: family1wide,
+    })
+    const mobile = getImageProps({
+        ...common,
+        src: family1square,
+    })
+
     return (
         <>
-            <Container> 
+            <Container className="page-header">
+                <Image
+                    className={styles.logo}
+                    src={logo}
+                    loading="eager"
+                    sizes="150px"
+                    alt="Kompassterapeutene logo"
+                />
                 <h1 className="h1">Kompassterapautene</h1>
                 <p className="p1">
-                    Gjør deres parforhold/familieforhold bedre. Vi vet at livskvaliteten øker med gode familieliv og samliv. 
-                    Kjærlighet må pleies for at det skal blomstre: 
+                    Gjør deres parforhold/familieforhold bedre. Vi vet at livskvaliteten øker med gode familieliv og samliv.
+                    Kjærlighet må pleies for at det skal blomstre:
                     for det eneste som går av seg selv er forfallet. Kompassterapeutene tilbyr kurs og samtaler for par og
                     familier som ønsker å arbeide med seg selv og bedre relasjonene rundt seg.
                 </p>
             </Container>
 
             <figure className={styles.figure}>
-                <img  
-                    className={styles.figure__image} 
-                    src="/family1.jpg" 
-                    alt="Mor og far med barn i sommereng." 
-                />
+                <picture>
+                    <source media="(orientation: landscape)" srcSet={desktop.props.srcSet} />
+                    <source media="(orientation: portrait)" srcSet={mobile.props.srcSet} />
+                    <img
+                        className={styles.figure__image} 
+                        alt={common.alt}
+                        sizes={common.sizes}
+                        src={desktop.props.src}
+                        style={{ width: '100%', height: 'auto' }}
+                    />
+                </picture>
+
             </figure>
 
             <Container>
@@ -30,13 +60,11 @@ export default function Home() {
                     forholdet et boost.
                 </p>
                 <p className="p2">
-                    Vi er Østlandsbasert i Oslo og Fredrikstad. Kurssted kan variere ut fra lokalene som benyttes. Vi tilbyr også <Link href="/kurs">samtaler og kurs</Link> digitalt.
+                    Vi er Østlandsbasert i Oslo og Fredrikstad. Kurssted kan variere ut fra lokalene som benyttes. Vi tilbyr også samtaler og kurs digitalt.
                 </p>
-
             </Container>
- 
-        
-            <Container> 
+
+            <Container>
 
                 <hgroup className="hgroup">
                     <h2 className="h2">PREP helgekurs</h2>
@@ -55,7 +83,7 @@ export default function Home() {
                     Det er lett for oss å differensiere da dere i deler av kurset jobber individuelt og privat.
                 </p>
 
-                <hgroup className="hgroup"> 
+                <hgroup className="hgroup">
                     <h2 className="h2" lang="en">Tuning into kids/teens</h2>
                 </hgroup>
                 <p className="p2">
@@ -69,8 +97,10 @@ export default function Home() {
                 <p className="p2">
                     Vi har eget kurs for tenåringsforeldre, som er <em lang="en">Tuning into teens</em>. Der jobbes det med å forstå mer om relasjonen mellom deg og tenåringen din, slik at du skal kunne håndtere
                     tenåringsfasen bedre. Monica har et tett samarbeid med sertifiserte i <em lang="en">Tuning into teens</em> og kan tilbys etter forespørsel.
-                </p> 
+                </p>
             </Container>
+
+            <Footer />
         </>
     );
 }

@@ -1,21 +1,30 @@
 import Container from "@/components/container/container"
 import style from "./page.module.scss"
+import Image from "next/image"
+
+import monicaogsusanne from "../../../assets/images/monicaogsusanne.jpg"
+import Footer from "@/components/footer/footer"
 
 export default function Page() {
     return (
         <>
-            <Container>
+            <Container className="page-header">  
                 <h1 className="h1">Hvem er vi?</h1>
 
                 <p className="p1">
-                    Susanne og Monica møttes i 2019 da de studerte master i familiebehandling på OsloMet. De fant straks ut at de hadde like 
-                    tanker rundt arbeidet som par- og familieterapeuter og at de lot seg inspirere av de samme psykologene i feltet. 
+                    Susanne og Monica møttes i 2019 da de studerte master i familiebehandling på OsloMet. De fant straks ut at de hadde like
+                    tanker rundt arbeidet som par- og familieterapeuter og at de lot seg inspirere av de samme psykologene i feltet.
                     Susanne og Monica tok senere sertifisering som PREP-kurs holdere ved Modum bad sammen og med ønske om å holde kurs sammen.
                 </p>
             </Container>
 
             <figure className={style.image}>
-                <img className={style.image__src} src="/susanne-monica.jpg" />
+                <Image
+                    className={style.image__src}
+                    src={monicaogsusanne}
+                    sizes="100vw"
+                    alt="Susanne og Monica"
+                />
                 <figcaption className={style.image__caption}>
                     <Container>
                         Susanne (til venstre) og Monica.
@@ -24,7 +33,7 @@ export default function Page() {
             </figure>
 
             <Container>
-                <hgroup className="hgroup"> 
+                <hgroup className="hgroup">
                     <h2 className="h2 " id="susanne">Susanne</h2>
                     <p className="h3">Par- og familieterapeut</p>
                 </hgroup>
@@ -52,7 +61,7 @@ export default function Page() {
                     Susanne er gift og har to egne barn og tre bonusbarn.
                 </p>
 
-                <hgroup className="hgroup"> 
+                <hgroup className="hgroup">
                     <h2 className="h2" id="monica">Monica</h2>
                     <p className="h3">Barn, ungdom og familien</p>
                 </hgroup>
@@ -78,6 +87,8 @@ export default function Page() {
                     Hun ser frem til å møte deg eller dere. Det tilbys ikke samtaler hvor alvorlig psykisk uhelse er til stede.
                 </p>
             </Container>
+
+            <Footer />
         </>
     )
 }

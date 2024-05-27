@@ -8,6 +8,7 @@
 
     &__src {
         width: 100%;
+        height: auto;
     }
 
     &__caption {
@@ -15,9 +16,8 @@
         left: 0;
         right: 0;
         bottom: 1em;
-        color: white;
-        opacity: .75;
-        text-shadow: 0 0 1em rgba(0 0 0 / 40%);
+        color: white; 
+        text-shadow: 0 0 1em rgba(0 0 0 / 100%);
         text-align: left;
         font-size: 1em;
 

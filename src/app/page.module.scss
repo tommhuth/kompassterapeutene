@@ -16,7 +16,19 @@
     &__image {
         object-fit: cover; 
         width: 100%;
-        object-position: center bottom;
-        max-height: clamp(300px, 50vw, 500px); 
+        height: auto;
+        object-position: center bottom; 
     }
+}
+
+
+.logo {
+    width: 6em;
+    height: auto;
+    display: block;
+    margin-bottom: .5em;
+
+    @media (max-width: 900px) { 
+        width: 5em;
+    }  
 }

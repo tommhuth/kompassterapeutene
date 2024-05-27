@@ -8,20 +8,30 @@ html {
     color: var(--black);
 }
 
+.page-header {
+    margin-top: 8em;
+
+    @media (max-width: 1000px) { 
+        margin-top: 5em;
+    } 
+
+    @media (max-width: 600px) { 
+        margin-top: 3.75em;
+    } 
+
+    @media (max-width: 450px) {
+        margin-top: 3.125em;
+    } 
+}
+
 .h1 {
     font-size: 4em;
     letter-spacing: -.04em;
-    line-height: 1.1;
-    margin-top: 2em;
-    margin-bottom: .25em;
-
-    @media (max-width: 1000px) { 
-        margin-top: 1.25em;
-    } 
+    line-height: 1.1; 
+    margin-bottom: .25em; 
 
     @media (max-width: 600px) {
-        font-size: 3em;
-        margin-top: 1.25em;
+        font-size: 3em; 
     } 
 
     @media (max-width: 450px) {

@@ -1,8 +1,7 @@
 import "../../assets/style/app.scss"
 
 import type { Metadata } from "next"
-import Header from "@/components/header/header"
-import Footer from "@/components/footer/footer"
+import Header from "@/components/header/header" 
 
 export const metadata: Metadata = {
     title: "Kompassterapeutene",
@@ -20,8 +19,6 @@ export default function RootLayout({
                 <main>
                     {children}
                 </main>
-
-                <Footer />
             </body>
         </html>
     )

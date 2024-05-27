@@ -1,6 +1,7 @@
 "use client"
 
 import Container from "@/components/container/container";
+import Footer from "@/components/footer/footer";
 import Price from "@/components/price/price";
 import Link from "next/link";
 
@@ -18,7 +19,7 @@ function Arrow() {
 export default function Kurs() {
     return (
         <>
-            <Container>
+            <Container className="page-header">
                 <h1 className="h1">Kurs</h1>
 
                 <p className="p1">
@@ -173,6 +174,8 @@ export default function Kurs() {
                     <li>3 timer <Price value={3000} /></li>
                 </ul>
             </Container>
+
+            <Footer />
         </>
     )
 }
