@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    imageSizes: [64, 96, 128, 256, 384],
+const nextConfig = { 
+    images: {
+        imageSizes: [64, 96, 128, 256],
+    }
 };
 
 export default nextConfig;
