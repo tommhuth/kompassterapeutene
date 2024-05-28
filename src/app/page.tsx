@@ -9,7 +9,11 @@ import family1squarey from "../../assets/images/family1_squarey.png"
 import logo from "../../assets/images/logo.jpg"
 
 export default function Home() {
-    const common = { alt: "Mor og far med barn i sommereng.", sizes: '100vw' }
+    const common = { 
+        alt: "Mor og far med barn i sommereng.", 
+        sizes: '100vw',
+        quality: 60,
+    }
     const desktop = getImageProps({
         ...common,
         src: family1wide,

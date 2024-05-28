@@ -29,6 +29,7 @@ export default function Page() {
                     src={monicaogsusanne}
                     sizes="100vw"
                     alt="Susanne og Monica"
+                    placeholder="blur"
                 />
                 <figcaption className={style.image__caption}>
                     <Container>

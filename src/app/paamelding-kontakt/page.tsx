@@ -30,6 +30,7 @@ export default function Page() {
                 sizes="100vw"
                 className={style.image}
                 alt="Par på strand ved solnedgang."
+                placeholder="blur"
             />
 
             <Footer tight />
