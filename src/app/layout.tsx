@@ -1,11 +1,14 @@
 import "../../assets/style/app.scss"
 
 import type { Metadata } from "next"
-import Header from "@/components/header/header" 
+import Header from "@/components/header/header"
 
 export const metadata: Metadata = {
-    title: "Kompassterapeutene",
     description: "Kompassterapeutene",
+    title: {
+        template: '%s — Kompassterapeutene',
+        default: 'Kompassterapeutene',
+    },
 }
 
 export default function RootLayout({

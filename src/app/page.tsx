@@ -2,21 +2,25 @@ import Container from "@/components/container/container"
 import Link from "next/link"
 import styles from "./page.module.scss"
 import Image, { getImageProps } from "next/image";
+import Footer from "@/components/footer/footer";
 
 import family1wide from "../../assets/images/family1_wide.png"
-import family1square from "../../assets/images/family1_square.png"
+import family1squarey from "../../assets/images/family1_squarey.png"
 import logo from "../../assets/images/logo.jpg"
-import Footer from "@/components/footer/footer";
 
 export default function Home() {
     const common = { alt: "Mor og far med barn i sommereng.", sizes: '100vw' }
     const desktop = getImageProps({
         ...common,
         src: family1wide,
+        width: 5791,
+        height: 2167
     })
     const mobile = getImageProps({
         ...common,
-        src: family1square,
+        src: family1squarey,
+        width: 3032,
+        height: 1827
     })
 
     return (
@@ -48,6 +52,8 @@ export default function Home() {
                         sizes={common.sizes}
                         src={desktop.props.src}
                         style={{ width: '100%', height: 'auto' }}
+                        width={mobile.props.width}
+                        height={mobile.props.height}
                     />
                 </picture>
 

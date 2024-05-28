@@ -1,8 +1,8 @@
-"use client"
-
 import Container from "@/components/container/container";
 import Footer from "@/components/footer/footer";
 import Price from "@/components/price/price";
+import ScrollList from "@/components/scroll-list/scroll-list";
+import { Metadata } from "next";
 import Link from "next/link";
 
 function Arrow() {
@@ -16,6 +16,10 @@ function Arrow() {
     )
 }
 
+export const metadata: Metadata = {
+    title: "Kurs"
+}
+
 export default function Kurs() {
     return (
         <>
@@ -27,43 +31,14 @@ export default function Kurs() {
                     ta kontakt med oss på eposten vår: <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
                 </p>
 
-                <ul
-                    className="arrow-list p2"
-                    onClick={e => {
-                        let target = e.target as HTMLAnchorElement
-
-                        if (target.tagName === "A") { 
-                            e.preventDefault()
-
-                            let element = document.getElementById(target.hash.substring(1))
-
-                            history.pushState(null, "", target.hash)
-                            element?.scrollIntoView({
-                                behavior: "smooth",
-                                block: "center",
-                            })
-                        }
-                    }}
-                >
-                    <li>
-                        <a href="#prep-helgekurs"><Arrow /> PREP helgekurs</a>
-                    </li>
-                    <li>
-                        <a href="#prep-kurs"><Arrow /> PREP kurs</a>
-                    </li>
-                    <li>
-                        <a href="#prep-timer"><Arrow /> PREP timer</a>
-                    </li>
-                    <li>
-                        <a href="#tuning-into-kids-teens-helgekurs"><Arrow /> Tuning into kids/teens helgekurs</a>
-                    </li>
-                    <li>
-                        <a href="#tuning-into-kids-teens-kurs"><Arrow /> Tuning into kids/teens kurs</a>
-                    </li>
-                    <li>
-                        <a href="#familieterapi-foreldreveiledning-og-parterapi"><Arrow /> Familieterapi, foreldreveiledning og parterapi</a>
-                    </li>
-                </ul>
+                <ScrollList>
+                    <a href="#prep-helgekurs"><Arrow /> PREP helgekurs</a>
+                    <a href="#prep-kurs"><Arrow /> PREP kurs</a>
+                    <a href="#prep-timer"><Arrow /> PREP timer</a>
+                    <a href="#tuning-into-kids-teens-helgekurs"><Arrow /> Tuning into kids/teens helgekurs</a>
+                    <a href="#tuning-into-kids-teens-kurs"><Arrow /> Tuning into kids/teens kurs</a>
+                    <a href="#familieterapi-foreldreveiledning-og-parterapi"><Arrow /> Familieterapi, foreldreveiledning og parterapi</a>
+                </ScrollList>
 
                 <hgroup className="hgroup" id="prep-helgekurs">
                     <h2 className="h2">PREP helgekurs</h2>
@@ -98,7 +73,7 @@ export default function Kurs() {
 
                 <h2 className="h2 hgroup" id="prep-timer">PREP timer</h2>
                 <p className="p2">
-                    Hvis dere ønsker å delta på enkelte temaer i PREP kurset, så tilbyr vi 1,5 time samtale 
+                    Hvis dere ønsker å delta på enkelte temaer i PREP kurset, så tilbyr vi 1,5 time samtale
                     på hvert tema. Samtalene er uten andre deltagere, men med dere alene.
                 </p>
                 <p className="p2">
@@ -123,7 +98,7 @@ export default function Kurs() {
                     <p className="h3">Neste kurs 2&ndash;3 november</p>
                 </hgroup>
                 <p className="p2">
-                    <Link href="/hvem-er-vi#monica">Monica</Link> tilbyr kurset i helger, enten med deg/dere alene 
+                    <Link href="/hvem-er-vi#monica">Monica</Link> tilbyr kurset i helger, enten med deg/dere alene
                     eller i gruppe. Ved avbestillinger innen 3 uker før kurset, refunderes halve beløpet.
                     Ved avbestillinger senere, refunderes ikke beløpet. Kurset tilbys etter forespørsel.
                 </p>

@@ -1,9 +1,14 @@
 import Container from "@/components/container/container";
 import Image from "next/image";
+import Footer from "@/components/footer/footer";
+import { Metadata } from "next";
 import style from "./page.module.scss"
 
 import couple from "../../../assets/images/couple.jpeg"
-import Footer from "@/components/footer/footer";
+
+export const metadata: Metadata = {
+    title: "Påmelding og kontakt"
+}
 
 export default function Page() {
     return (

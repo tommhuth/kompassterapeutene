@@ -4,6 +4,11 @@ import Image from "next/image"
 
 import monicaogsusanne from "../../../assets/images/monicaogsusanne.jpg"
 import Footer from "@/components/footer/footer"
+import { Metadata, Viewport } from "next"
+
+export const metadata: Metadata = {
+    title: "Hvem er vi?"
+}
 
 export default function Page() {
     return (
