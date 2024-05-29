@@ -3,7 +3,7 @@ import styles from "./container.module.scss"
 import classNames from "classnames";
 
 interface ContainerProps {
-    style: CSSProperties;
+    style?: CSSProperties;
     children: ReactNode;
     className?: string
 }
