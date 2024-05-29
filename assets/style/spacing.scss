@@ -1,0 +1,25 @@
+.page-header {
+    margin-top: 8em;
+
+    @media (max-width: 1000px) { 
+        margin-top: 5em;
+    } 
+
+    @media (max-width: 600px) { 
+        margin-top: 3.75em;
+    } 
+
+    @media (max-width: 450px) {
+        margin-top: 3.125em;
+    } 
+}
+
+.hgroup {
+    margin-top: 3.5rem; 
+    margin-bottom: 1rem;
+
+    @media (max-width: 640px) {
+        margin-top: 2.5rem; 
+        margin-bottom: .65rem;
+    } 
+}

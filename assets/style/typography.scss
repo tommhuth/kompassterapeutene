@@ -1,26 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Noto+Sans:wght@100..900&display=swap');
 
 html {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-serif);
     font-weight: 400;
     line-height: 1.4;
     color: var(--black);
-}
-
-.page-header {
-    margin-top: 8em;
-
-    @media (max-width: 1000px) { 
-        margin-top: 5em;
-    } 
-
-    @media (max-width: 600px) { 
-        margin-top: 3.75em;
-    } 
-
-    @media (max-width: 450px) {
-        margin-top: 3.125em;
-    } 
 }
 
 .h1 {
@@ -46,16 +30,6 @@ html {
     @media (max-width: 600px) {
         font-size: 1.85em;
     }  
-}
-
-.hgroup {
-    margin-top: 3.5rem; 
-    margin-bottom: 1rem;
-
-    @media (max-width: 640px) {
-        margin-top: 2.5rem; 
-        margin-bottom: .65rem;
-    } 
 }
 
 .h3 {
@@ -116,63 +90,4 @@ html {
     font-weight: 700;
     margin-top: 2em;
     margin-bottom: .5em;
-}
-
-.list {
-    columns: 2;
-    gap: 1.5em;
-    margin: .5em 0; 
-
-    li {
-        list-style-type: disc;
-        margin-left: 1.25em;
-        margin-bottom: .125em;
-    }
-}
-
-.tags {
-    display: flex;
-    gap: .35em;
-    flex-wrap: wrap;
-    color: var(--wheat);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 300;
-    font-size: .8em;
-    letter-spacing: .025em;
-
-    li {
-        border: 1px solid currentColor;
-        padding: .85em 1.75em;
-        border-radius: 5em;
-    }
-}
-
-.arrow-list {
-    margin-top: 1.5em !important;
-
-    li {
-        margin-bottom: .125em;
-    }
-
-    a {
-        display: inline-flex;
-        gap: .75em;
-        place-content: center;
-        text-decoration: none;
-
-        svg {
-            width: 1em;
-            transition: all .2s;
-            pointer-events: none;
-        }
-
-        &:hover {
-            svg {
-                translate: .125em 0;
-            }
-        }
-    }
-
 }
