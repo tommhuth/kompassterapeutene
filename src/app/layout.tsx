@@ -1,6 +1,7 @@
 import "../../assets/style/app.scss"
 
 import type { Metadata } from "next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "@/components/header/header"
 
 export const metadata: Metadata = {
@@ -30,6 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <main>
                     {children}
                 </main>
+                
+                <SpeedInsights />
             </body>
         </html>
     )
