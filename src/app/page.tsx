@@ -7,6 +7,11 @@ import Footer from "@/components/footer/footer";
 import family1wide from "../../assets/images/family1_wide.png"
 import family1squarey from "../../assets/images/family1_squarey.png"
 import logo from "../../assets/images/logo.jpg"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    description: "Forbedre deres parforhold og familieforhold med Kompassterapeutene. Vi tilbyr kurs og samtaler for å styrke relasjoner og øke livskvaliteten. Kontakt oss for hjelp med parforhold, barneoppdragelse og familieliv."
+}
 
 export default function Home() {
     const common = { 

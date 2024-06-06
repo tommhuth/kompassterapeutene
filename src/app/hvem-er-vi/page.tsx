@@ -7,7 +7,8 @@ import Footer from "@/components/footer/footer"
 import { Metadata, Viewport } from "next"
 
 export const metadata: Metadata = {
-    title: "Hvem er vi?"
+    title: "Hvem er vi?",
+    description: "Susanne og Monica er erfarne familieterapeuter utdannet fra OsloMet. Med sertifisering fra Modum Bad og over 10 års erfaring, tilbyr de parterapi og foreldreveiledning. Kontakt dem for hjelp med samliv, barneoppdragelse og familiebehandling."
 }
 
 export default function Page() {
