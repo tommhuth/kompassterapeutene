@@ -18,7 +18,7 @@ function Arrow() {
 
 export const metadata: Metadata = {
     title: "Kurs",
-    description: "Oppdag våre kurs og samtaler på hjemmesiden. Vi tilbyr PREP og Tuning into kids/teens for å styrke parforhold og familierelasjoner. Våre tjenester passer for alle aldre og kan tilbys fysisk eller digitalt, tilpasset dine behov."
+    description: "Vi tilbyr internasjonalt anerkjente kurs som PREP og Tuning into kids/teens for å styrke parforhold og familierelasjoner. Våre tjenester passer for alle aldre og kan tilbys fysisk eller digitalt, tilpasset deres behov."
 }
 
 export default function Kurs() {
