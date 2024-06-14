@@ -45,11 +45,12 @@ export default function Page() {
                     <p className="h3">Par- og familieterapeut</p>
                 </hgroup>
                 <p className="p2">
-                    Susanne har erfaring som parterapeut og familieterapeut i det offentlige og private. Hun er også
-                    utdannet adjunkt med tilleggsutdanning og har over 10 års erfaring som kontaktlærer i grunnskolen bak
-                    seg før hun startet som familieterapeut. Susanne ferdigstilte master i familiebehandling/familieterapi ved OsloMet.
-                    Masteroppgaven hadde temaet «Samlivsbrudd i småbarnsperioden». Hun er sertifisert PREP-kurs holder ved Modum bad.
-
+                    Susanne har erfaring som parterapeut og familieterapeut i det offentlige og private. Hun er også 
+                    utdannet adjunkt med tilleggsutdanning og har over 10 års erfaring som kontaktlærer i grunnskolen 
+                    bak seg før hun startet som familieterapeut. Susanne ferdigstilte master i 
+                    familiebehandling/familieterapi ved Oslo Metropolitan University i 2022. Masteroppgaven hadde 
+                    temaet «Samlivsbrudd i småbarnsperioden». I dag er hun veileder for nye masterstudenter i 
+                    familibehandling ved OsloMet. Susanne er sertifisert PREP-kurs holder ved Modum bad.
                 </p>
                 <p className="p2">
                     Susanne jobber som familieterapeut og familieveileder for Sarpsborg kommune, og har hatt praksis ved
