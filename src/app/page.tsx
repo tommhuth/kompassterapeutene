@@ -42,12 +42,11 @@ export default function Home() {
                     sizes="150px"
                     alt="Kompassterapeutene logo"
                 />
-                <h1 className="h1">Kompassterapautene</h1>
+                <h1 className="h1">Kompassterapeutene</h1>
                 <p className="p1">
-                    Gjør deres parforhold/familieforhold bedre. Vi vet at livskvaliteten øker med gode familieliv og samliv.
-                    Kjærlighet må pleies for at det skal blomstre:
-                    for det eneste som går av seg selv er forfallet. Kompassterapeutene tilbyr kurs og samtaler for par og
-                    familier som ønsker å arbeide med seg selv og bedre relasjonene rundt seg.
+                    Gjør deres parforhold eller familieforhold bedre. Vi vet at livskvaliteten øker med gode familieliv og samliv.
+                    Kjærligheten må pleies for at den skal blomstre, det eneste eneste som går av seg selv er forfallet. 
+                    Kompassterapeutene tilbyr kurs og samtaler for par og familier som ønsker å bedre relasjonene sine.
                 </p>
             </Container>
 
@@ -70,7 +69,7 @@ export default function Home() {
 
             <Container>
                 <p className="p2">
-                    <Link href="/kurs">På våre kurs</Link> vi arbeider med hvordan dere kan gå veien som par inn i
+                    <Link href="/kurs">På våre kurs</Link> arbeider vi med hvordan dere kan gå veien som par inn i
                     fremtiden sammen. Vi hjelper dere med eksisterende utfordringer, å forebygge problemer, og rett og slett gi
                     forholdet et boost.
                 </p>
@@ -93,8 +92,10 @@ export default function Home() {
                 </p>
 
                 <p className="p2">
-                    Dette samlivskurset er en boost for parforholdet. På kurset kan dere bli kjent på en ny måte, og dere vil lære praktiske grep, som vil hjelpe
-                    kommunikasjon og problemløsning, og mye mer. Kurset kan være lett og lekent, eller dere kan gå i dybden på litt vanskeligere temaer.
+                    Dette samlivskurset er en boost for parforholdet. 
+                    På kurset kan dere bli kjent på en ny måte og dere vil lære praktiske grep. 
+                    De er ment for å hjelpe på kommunikasjonen og gi dere verktøy for problemløsning, og mye mer.  
+                    Kurset kan være lett og lekent, eller dere kan gå i dybden på litt vanskeligere temaer.
                     Det er lett for oss å differensiere da dere i deler av kurset jobber individuelt og privat.
                 </p>
 

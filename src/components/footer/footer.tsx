@@ -8,7 +8,7 @@ export default function Footer({ tight = false }: { tight?: boolean }) {
                 [styles["footer--tight"]]: tight
             })}
         >
-            Kompassterapautene &copy;  {new Date().getFullYear()}
+            Kompassterapeutene &copy;  {new Date().getFullYear()}
             <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
         </footer>
     )

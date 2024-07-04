@@ -45,17 +45,19 @@ export default function Page() {
                     <p className="h3">Par- og familieterapeut</p>
                 </hgroup>
                 <p className="p2">
-                    Susanne har erfaring som parterapeut og familieterapeut i det offentlige og private. Hun er også 
+                    Susanne har erfaring som parterapeut og familieterapeut i det offentlige og private.  Hun er også 
                     utdannet adjunkt med tilleggsutdanning og har over 10 års erfaring som kontaktlærer i grunnskolen 
                     bak seg før hun startet som familieterapeut. Susanne ferdigstilte master i 
                     familiebehandling/familieterapi ved Oslo Metropolitan University i 2022. Masteroppgaven hadde 
-                    temaet «Samlivsbrudd i småbarnsperioden». I dag er hun veileder for nye masterstudenter i 
-                    familibehandling ved OsloMet. Susanne er sertifisert PREP-kurs holder ved Modum bad.
+                    temaet «Samlivsbrudd i småbarnsperioden».
+                    I dag er hun veileder for masterstudenter i familieterapi ved OsloMet.  Susanne er sertifisert PREP-kurs holder ved Modum bad.
                 </p>
                 <p className="p2">
                     Susanne jobber som familieterapeut og familieveileder for Sarpsborg kommune, og har hatt praksis ved
-                    familievernkontoret i Fredrikstad og hos Fossumkollektivets pårørende avdeling. Susanne har kjennskap til
-                    COSP (Cicle of security), PMTO (Parent manegement training- Oregon) og Tuning into kids, som er foreldreveiledende kurs.
+                    familievernkontoret i Fredrikstad og hos Fossumkollektivets pårørende avdeling. 
+                    
+                    Susanne har kjennskap til
+                    COS (Cicle of security), PMTO (Parent manegement training- Oregon) og Tuning into kids, som er foreldreveiledende kurs.
                     Hennes tidligere lærerkarriere har gitt henne mange års erfaring med samarbeid med barn, unge og deres foreldre.
                     Hun trives godt med pedagogisk arbeid og anvender det hos familiene hun møter.
                 </p>
@@ -87,12 +89,11 @@ export default function Page() {
                 </p>
                 <p className="p2">
                     Endring er et felles prosjekt mellom familiemedlemmene og henne, for å nå et felles mål. En løsning passer ikke alle,
-                    da hele bildet må ses og vurderinger bli tatt ut fra familiens eller parets behov. Til vanlig er Monica bosatt i Oslo
-                    og tilbyr samtaler ved Bislett. Hun bruker fritiden på mann, barn og aktiviteter. Hennes faglige bakgrunn er i pedagogikk,
-                    barnevern og familieterapi. Hun i likhet med Susanne sertifisert PREP-kurs holder ved Modum bad.
+                    da hele bildet må ses og vurderinger bli tatt ut fra familiens eller parets behov. 
+                    Monica tilbyr samtaler i Oslo, digitalt eller etter avtale med dere. Hennes faglige bakgrunn er i pedagogikk, barnevern og familieterapi. Hun, i likhet med Susanne, er sertifisert PREP-kurs holder ved Modum bad. 
                 </p>
                 <p className="p2">
-                    Hun ser frem til å møte deg eller dere. Det tilbys ikke samtaler hvor alvorlig psykisk uhelse er til stede.
+                    Hun bruker fritiden på mann, barn og aktiviteter.
                 </p>
             </Container>
 

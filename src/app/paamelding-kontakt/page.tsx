@@ -17,7 +17,7 @@ export default function Page() {
             <Container className="page-header">
                 <h1 className="h1">Påmelding og kontakt</h1>
                 <p className="p1">
-                    For påmelding eller spørsmål om kurs/samtaler, vennligst
+                    For påmelding eller spørsmål om kurs og samtaler, vennligst
                     ta kontakt med oss på eposten vår: <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
                 </p>
                 <p className="p1">

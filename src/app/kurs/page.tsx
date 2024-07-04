@@ -28,16 +28,16 @@ export default function Kurs() {
                 <h1 className="h1">Kurs</h1>
 
                 <p className="p1">
-                    For påmelding eller spørsmål om kurs/samtaler, vennligst
+                    For påmelding eller spørsmål om kurs og samtaler, vennligst
                     ta kontakt med oss på eposten vår: <a href="mailto:kompassterapeutene@outlook.com">kompassterapeutene@outlook.com</a>
                 </p>
 
                 <ScrollList>
                     <a href="#prep-helgekurs"><Arrow /> PREP helgekurs</a>
-                    <a href="#prep-kurs"><Arrow /> PREP kurs</a>
+                    <a href="#prep-kurs-privat"><Arrow /> PREP kurs privat</a>
                     <a href="#prep-timer"><Arrow /> PREP timer</a>
-                    <a href="#tuning-into-kids-teens-helgekurs"><Arrow /> Tuning into kids/teens helgekurs</a>
                     <a href="#tuning-into-kids-teens-kurs"><Arrow /> Tuning into kids/teens kurs</a>
+                    <a href="#tuning-into-kids-teens-enkelttimer"><Arrow /> Tuning into kids/teens enkelttimer</a>
                     <a href="#familieterapi-foreldreveiledning-og-parterapi"><Arrow /> Familieterapi, foreldreveiledning og parterapi</a>
                 </ScrollList>
 
@@ -58,7 +58,7 @@ export default function Kurs() {
                     <li><Price value={4700} /> for et par</li>
                 </ul>
 
-                <h2 className="h2 hgroup" id="prep-kurs">PREP kurs</h2>
+                <h2 className="h2 hgroup" id="prep-kurs-privat">PREP kurs privat</h2>
                 <p className="p2">
                     Ønsker dere å ta et parkurs mer privat og uten andre deltagere? Ta kursrekken alene over 4 ganger på
                     1,5 time. Få muligheten til å bli bedre kjent med hverandre som par og ha kurset helt for dere selv.
@@ -68,7 +68,7 @@ export default function Kurs() {
                     Ved ønske om reduserte antall samtaler, så regnes prisen ut fra en PREP time (se informasjon om PREP timer).
                 </p>
                 <ul className="tags">
-                    <li><Price value={5200} /> for et par</li>
+                    <li><Price value={1500} /> per time</li>
                     <li>Digitalt eller fysisk</li>
                 </ul>
 
@@ -94,13 +94,12 @@ export default function Kurs() {
                     <li>Tilgivelse og hvordan bli gamle sammen?</li>
                 </ul>
 
-                <hgroup className="hgroup" id="tuning-into-kids-teens-helgekurs">
-                    <h2 className="h2">Tuning into kids/teens helgekurs</h2>
+                <hgroup className="hgroup" id="tuning-into-kids-teens-kurs">
+                    <h2 className="h2">Tuning into kids/teens kurs</h2>
                     <p className="h3">Neste kurs 2&ndash;3 november</p>
                 </hgroup>
                 <p className="p2">
-                    <Link href="/hvem-er-vi#monica">Monica</Link> tilbyr kurset i helger, enten med deg/dere alene
-                    eller i gruppe. Ved avbestillinger innen 3 uker før kurset, refunderes halve beløpet.
+                    Kurset tilbys i gruppe, ukentlig eller i helger.  Ved avbestillinger innen 3 uker før kurset, refunderes halve beløpet.
                     Ved avbestillinger senere, refunderes ikke beløpet. Kurset tilbys etter forespørsel.
                 </p>
 
@@ -108,14 +107,13 @@ export default function Kurs() {
                     <li><Price value={4700} /> per foreldrepar/aleneforelder</li>
                 </ul>
 
-                <h2 className="h2 hgroup" id="tuning-into-kids-teens-kurs">
-                    Tuning into kids/teens kurs
+                <h2 className="h2 hgroup" id="tuning-into-kids-teens-enkelttimer">
+                    Tuning into kids/teens kurs enkelttimer
                 </h2>
                 <p className="p2">
-                    <Link href="/hvem-er-vi#monica">Monica</Link> tilbyr kurset over enkelttimer, alene eller i gruppe på 60 min.
-                    Ved avbestilling senest 3 uker før
-                    timen, refunderes halve beløpet. Ved avbestillinger senere, refunderes ikke beløpet. Kurset tilbys etter
-                    forespørsel.
+                    Kurset tilbys som enkelttimer på 60 min privat. 
+                    Ved avbestilling senest 3 uker før timen, refunderes halve beløpet. Ved avbestillinger senere, 
+                    refunderes ikke beløpet. Kurset tilbys etter forespørsel.
                 </p>
 
                 <ul className="tags">
@@ -127,9 +125,8 @@ export default function Kurs() {
                     Familieterapi, foreldreveiledning og parterapi
                 </h2>
 
-                <p className="p2"> <Link href="/hvem-er-vi#susanne">Susanne</Link> tilbyr samtaler.</p>
-
-                <h3 className="l1">Temaer kan være</h3>
+                <p className="p2">Det tilbys samtaler:</p>
+ 
                 <ul className="p2 list">
                     <li>Kommunikasjon</li>
                     <li>Tid til parforholdet eller familien</li>
