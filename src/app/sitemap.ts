@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const paths = ["/", "/hvem-er-vi", "/kurs", "paamelding-kontakt"]
+const paths = ["/", "/hvem-er-vi", "/kurs", "/paamelding-kontakt"]
 const APP_URL = "https://www.kompassterapeutene.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
