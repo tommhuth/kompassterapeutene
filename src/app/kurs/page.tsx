@@ -4,6 +4,7 @@ import Price from "@/components/price/price";
 import ScrollList from "@/components/scroll-list/scroll-list";
 import { Metadata } from "next";
 import Link from "next/link";
+import { APP_URL } from "../sitemap";
 
 function Arrow() {
     return (
@@ -18,6 +19,9 @@ function Arrow() {
 
 export const metadata: Metadata = {
     title: "Kurs",
+    alternates: {
+        canonical: APP_URL + "/kurs"
+    },
     description: "Vi tilbyr internasjonalt anerkjente kurs som PREP og Tuning into kids/teens for å styrke parforhold og familierelasjoner. Våre tjenester passer for alle aldre og kan tilbys fysisk eller digitalt, tilpasset deres behov."
 }
 

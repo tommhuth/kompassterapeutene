@@ -5,10 +5,14 @@ import { Metadata } from "next";
 import style from "./page.module.scss"
 
 import couple from "../../../assets/images/couple.jpeg"
+import { APP_URL } from "../sitemap";
 
 export const metadata: Metadata = {
     title: "Påmelding og kontakt",
     description: "Styrk relasjonene deres med Kompassterapeutene. Ta kontakt i dag for veiledning og forebygging av slitasje på forhold. For spørsmål eller påmelding, kontakt oss på kompassterapeutene@outlook.com. Vi ser frem til å hjelpe dere.",
+    alternates: {
+        canonical: APP_URL + "/paamelding-kontakt"
+    }
 }
 
 export default function Page() {

@@ -5,9 +5,13 @@ import Image from "next/image"
 import monicaogsusanne from "../../../assets/images/monicaogsusanne.jpg"
 import Footer from "@/components/footer/footer"
 import { Metadata, Viewport } from "next"
+import { APP_URL } from "../sitemap"
 
 export const metadata: Metadata = {
     title: "Hvem er vi?",
+    alternates: {
+        canonical: APP_URL + "/hvem-er-vi"
+    },
     description: "Susanne og Monica er erfarne familieterapeuter utdannet fra OsloMet. Med sertifisering fra Modum Bad og over 10 års erfaring, tilbyr de parterapi og foreldreveiledning. Kontakt dem for hjelp med samliv, barneoppdragelse og familiebehandling."
 }
 
