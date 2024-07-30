@@ -11,7 +11,7 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "vercel.app",
+            value: "kompassterapeutene.vercel.app",
           },
         ],
         headers: [
