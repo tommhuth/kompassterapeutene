@@ -6,7 +6,7 @@ const nextConfig = {
   },
   headers: [
     {
-      source: "/",
+      source: "/*",
       has: [
         {
           typ: "host",
@@ -16,7 +16,7 @@ const nextConfig = {
       headers: [
         {
           key: "X-Robots-Tag",
-          value: "noindex",
+          value: "noindex, nofollow",
         },
       ],
     },
