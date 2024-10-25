@@ -85,8 +85,7 @@ export default function Home() {
             <Container>
 
                 <hgroup className="hgroup">
-                    <h2 className="h2">PREP helgekurs</h2>
-                    <p className="h3">Neste kurs 7&ndash;8. september 2024 i Oslo</p>
+                    <h2 className="h2">PREP helgekurs</h2> 
                 </hgroup>
 
                 <p className="p2">

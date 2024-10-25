@@ -46,8 +46,7 @@ export default function Kurs() {
                 </ScrollList>
 
                 <hgroup className="hgroup" id="prep-helgekurs">
-                    <h2 className="h2">PREP helgekurs</h2>
-                    <p className="h3">Neste kurs 7&ndash;8 september</p>
+                    <h2 className="h2">PREP helgekurs</h2> 
                 </hgroup>
                 <p className="p2">
                     Vil dere ha et kræsjkurs i parforhold? Ta helgekurset vårt som holdes lørdag og søndag kl. 10-16
@@ -99,8 +98,7 @@ export default function Kurs() {
                 </ul>
 
                 <hgroup className="hgroup" id="tuning-into-kids-teens-kurs">
-                    <h2 className="h2">Tuning into kids/teens kurs</h2>
-                    <p className="h3">Neste kurs 2&ndash;3 november</p>
+                    <h2 className="h2">Tuning into kids/teens kurs</h2> 
                 </hgroup>
                 <p className="p2">
                     Kurset tilbys i gruppe, ukentlig eller i helger.  Ved avbestillinger innen 3 uker før kurset, refunderes halve beløpet.
